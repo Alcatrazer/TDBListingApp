@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>990</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>349</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TDB Lister</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>Basic</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="5" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>ISBN:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditISBN</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditISBN">
+              <property name="text">
+               <string>9789352640645</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>Edition:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditEdition">
+              <property name="text">
+               <string>First</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>6</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Title:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditTitle</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditTitle">
+              <property name="text">
+               <string>Title</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="14" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QComboBox" name="comboBoxContribType">
+              <item>
+               <property name="text">
+                <string>Author</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Editor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Illustrator</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Translator</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Contributor</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditContribValue"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonAddContrib">
+              <property name="text">
+               <string>+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Contributors</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>&amp;Tags:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditTags</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditTags">
+              <property name="text">
+               <string>Author1, Publisher,  Tag1, Tag2, Tag3</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="QComboBox" name="comboBoxQtStyles"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_3">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Clear fields</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_4">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>set font</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="10" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>&amp;Dims (cm):</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditWidth</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>w:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditWidth">
+              <property name="text">
+               <string>5</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>51</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>h:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditHeight</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditHeight">
+              <property name="text">
+               <string>6</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>d:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditDepth</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditDepth">
+              <property name="text">
+               <string>0.2</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="9" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="QListView" name="listViewBkPublishers"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonDeletePublisher">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>-</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonMovePublisherUp">
+                <property name="text">
+                 <string>up</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonMovePublisherDown">
+                <property name="text">
+                 <string>down</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>6</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>S&amp;ubtitle:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditSubtitle</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditSubtitle">
+              <property name="text">
+               <string>Subtitle</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Bi&amp;nding:</string>
+              </property>
+              <property name="buddy">
+               <cstring>comboBoxBinding</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBoxBinding">
+              <item>
+               <property name="text">
+                <string>PB</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>HB</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>CS</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>EPUB</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>MOBI</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>PDF</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Pages</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditPageCount</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditPageCount">
+              <property name="text">
+               <string>999</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_Year">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>&amp;Year:</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditYear</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditYear">
+              <property name="text">
+               <string>1999</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="11" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>Bk Wgt(&amp;gms):</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditBkWeight</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditBkWeight">
+              <property name="text">
+               <string>135</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>P&amp;kg Wgt(gms):</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEditPkgWeight</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditPkgWeight">
+              <property name="text">
+               <string>150</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="8" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Publisher:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditPublisher"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonAddPublisher">
+              <property name="text">
+               <string>+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="12" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>Price(Rs):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditPrice">
+              <property name="text">
+               <string>100</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>Discount%:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBoxDiscount">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>49</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>TDB Auto</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelPriceAfterDiscount">
+              <property name="text">
+               <string>=0(0)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QTableView" name="tableViewContributor">
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectItems</enum>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>150</number>
+            </attribute>
+            <attribute name="horizontalHeaderHighlightSections">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>true</bool>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonDeleteContrib">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonMoveContribUp">
+              <property name="text">
+               <string>up</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonMoveContribDown">
+              <property name="text">
+               <string>down</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Paragraphs</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Long Description</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPlainTextEdit" name="plainTextEditLongDesc">
+            <property name="plainText">
+             <string>This is a 
+Long Description</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Short Description</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPlainTextEdit" name="plainTextEditShortDesc">
+            <property name="plainText">
+             <string>This is a
+Short Description</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>About Contributors</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPlainTextEdit" name="plainTextEditAboutContribs">
+            <property name="plainText">
+             <string>Cotributor 1 is an author.
+
+Contributor 2 is an illustrator.
+
+Cotributor 3 is an author.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Tools</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="2">
+         <widget class="QToolBox" name="toolBox">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>317</width>
+             <height>865</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>TDB Tools</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="4" column="0">
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>301</width>
+                 <height>849</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_8">
+                <item row="0" column="0">
+                 <layout class="QVBoxLayout" name="verticalLayout">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_5">
+                    <property name="title">
+                     <string>Title</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_12">
+                     <item row="2" column="0">
+                      <widget class="QPushButton" name="pushButtonTDBCopyTags">
+                       <property name="text">
+                        <string>Copy tags</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <item>
+                        <widget class="QPushButton" name="pushButtonCopyTDBTitle">
+                         <property name="text">
+                          <string>Copy Title</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButtonTDBCopyISBN">
+                         <property name="text">
+                          <string>Copy isbn</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_3">
+                    <property name="title">
+                     <string>Long Desc</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_10">
+                     <item row="1" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_11">
+                       <item>
+                        <widget class="QPushButton" name="pushButtonPrevwLongDesc">
+                         <property name="text">
+                          <string>Preview</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButtonTDBCopyLongDesc">
+                         <property name="text">
+                          <string>Copy</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_2">
+                    <property name="title">
+                     <string>Short Desc</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_11">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_10">
+                       <item>
+                        <widget class="QPushButton" name="pushButtonPrevwShrtDesc">
+                         <property name="text">
+                          <string>Preview</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButtonTDBCopyShortDesc">
+                         <property name="text">
+                          <string>Copy</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_4">
+                    <property name="title">
+                     <string>About Contributors</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_13">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_12">
+                       <item>
+                        <widget class="QPushButton" name="pushButtonPrevwAbtContribs">
+                         <property name="text">
+                          <string>Preview</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButtonTDBCopyAboutContribs">
+                         <property name="text">
+                          <string>Copy</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QGroupBox" name="groupBox_6">
+                       <property name="title">
+                        <string>Other data popup</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_14">
+                        <item row="0" column="0">
+                         <layout class="QHBoxLayout" name="horizontalLayout_15">
+                          <item>
+                           <widget class="QPushButton" name="pushButtonTDBOtherDataPopup">
+                            <property name="text">
+                             <string>show popup</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Help</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_QwikHelp">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Keyboard Shortcuts:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Inside input boxes (single/multiline)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ctrl + l =&amp;gt; (ctrl + small L) change selection to lowercase&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ctrl + u =&amp;gt; Change first letter of selection to uppercase others to lowercase. (Hint) can select a space to make all lowercase)&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ctrl + / =&amp;gt; Insert an opening &amp;lt;i&amp;gt; tag and place the cursor just before letter &amp;quot;i&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>349</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Fi&amp;le</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>lineEditTitle</tabstop>
+  <tabstop>lineEditSubtitle</tabstop>
+  <tabstop>comboBoxBinding</tabstop>
+  <tabstop>lineEditPageCount</tabstop>
+  <tabstop>lineEditYear</tabstop>
+  <tabstop>lineEditISBN</tabstop>
+  <tabstop>lineEditTags</tabstop>
+  <tabstop>lineEditWidth</tabstop>
+  <tabstop>lineEditHeight</tabstop>
+  <tabstop>lineEditDepth</tabstop>
+  <tabstop>lineEditBkWeight</tabstop>
+  <tabstop>lineEditPkgWeight</tabstop>
+  <tabstop>plainTextEditLongDesc</tabstop>
+  <tabstop>plainTextEditShortDesc</tabstop>
+  <tabstop>plainTextEditAboutContribs</tabstop>
+  <tabstop>textBrowser</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../static_resources/icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

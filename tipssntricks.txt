@@ -1,0 +1,9 @@
+ 
+ 
+<begin>
+# how to compute a fixed width for a button which always fits
+
+width = button.fontMetrics().size(Qt.TextShowMnemonic, button.text()).width() + some_margin
+button.setFixedWidth(width)
+
+<end>
